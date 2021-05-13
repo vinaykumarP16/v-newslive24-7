@@ -94,7 +94,7 @@
 async function fetchdata(){
 
     const entry=document.getElementById('input').value;
-    const url=`http://api.mediastack.com/v1/news?access_key=d25a7cec0a6c99e63e745b30cc094f1b&countries=in&languages=en&keywords=${entry}`;
+    const url=`https://api.mediastack.com/v1/news?access_key=d25a7cec0a6c99e63e745b30cc094f1b&countries=in&languages=en&keywords=${entry}`;
     const news= await fetch(url);
     const newnews= await news.json();
     console.log(newnews);
